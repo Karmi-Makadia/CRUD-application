@@ -1,0 +1,79 @@
+body{
+  background-color: #aacdbe;
+}
+h1{
+  font-family: 'Sacramento', cursive;
+}
+h3{
+  font-family: 'Roboto Slab', serif;
+}
+body > table{
+  width: 80%;
+  background-color: #ea907a;
+}
+table{
+  border-collapse: collapse;
+}
+table.list{
+  width:100%;
+}
+td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr{
+  background-color: grey;
+}
+input[type-text], input[type-number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+input[type-submit]{
+  width: 30%;
+  background-color: #ddd;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-action-button{
+  text-align: right;
+  font-size: 20px;
+  height: 30px;
+}
+a{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ee;
+  margin-right: 4px;
+}
+label.validation-error{
+  color: red;
+  margin-left: 5px;
+  font-size: 10px;
+}
+.hide{
+  display: none;
+}
+.sc{
+  background-color: #ccafaf;
+  height: 300px;
+}
+.tc{
+  height: 200px;
+  font-size: 20px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CRUD application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,500&family=Marck+Script&family=Roboto+Slab:wght@600&family=Sacramento&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Student Record</h1>
+    <h3>CRUD Application with Javascript</h3>
+<table class="sc">
+  <tr>
+    <td class="tc">
+      <form class="" action="index.html" method="post" autocomplete="off" onsubmit="event.preventDefault();onformsubmit();">
+        <div class="">
+          <label for="name"> Full Name*</label><label class="validation-error hide" id="nameValidationError">This field is required</label>
+          <br>
+          <input type="text" name="name" value="" id="name">
+        </div>
+        <div class="">
+          <label for="regno">Registration No.</label><br>
+          <input type="text" name="regno" value="" id="regno">
+        </div>
+        <div class="">
+          <label for="dept">Department</label><br>
+          <input type="text" name="dept" value="" id="dept">
+        </div>
+        <div class="form-action-button">
+          <input type="submit" name="Submit" value="Create" style="width: 75px; height: 35px; font-size: 15px;border-radius: 8px;">
+        </div>
+      </form>
+    </td>
+    <td>
+      <table class="list" id="studentlist">
+        <thead class="grey">
+          <tr>
+            <th>Full Name</th>
+            <th>Reg no.</th>
+            <th>Department</th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Riya Sharma</td>
+            <td>RA180487</td>
+            <td>CSE</td>
+            <td><a onClick="onEdit(this)">Update</a><a onClick="onDelete(this)">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Terry Carter</td>
+            <td>RA191043</td>
+            <td>Aeronautical</td>
+            <td><a onClick="onEdit(this)">Update</a><a onClick="onDelete(this)">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Doris Bennett</td>
+            <td>RA170087</td>
+            <td>Chemical</td>
+            <td><a onClick="onEdit(this)">Update</a><a onClick="onDelete(this)">Delete</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</table>
+  <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
